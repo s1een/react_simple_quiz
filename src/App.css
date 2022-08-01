@@ -1,38 +1,108 @@
-.App {
+body {
+  background-color: #f5f7fb;
+  font-family: "Karla", sans-serif;
+}
+.container {
+  width: 1000px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px 0px black;
+}
+.block {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+}
+.top {
+  right: -90px;
+  top: -85px;
+  transform: rotate(-128.49deg);
+  background: #fffad1;
+}
+.bottom {
+  background: #fffad1;
+  bottom: -90px;
+  left: -80px;
+  background: #deebf8;
+  border-radius: 100px;
+}
+.main {
+  width: 100vh;
+  height: 20vw;
+  margin: 100px auto;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: #293264;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.title {
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 37px;
+  color: #293264;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  background: #4d5b9e;
+  border-radius: 15px;
+  color: #f5f7fb;
+  padding: 16px 28px;
+  width: 250px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #4d5b9eb4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.questions {
+  padding: 40px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  user-select: none;
+}
+.question {
+  width: 100%;
+}
+.answers {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+.btn-answer {
+  background: #f5f7fb;
+  border: 0.794239px solid #4d5b9e;
+  padding: 4px 8px;
+  cursor: pointer;
+  color: #293264;
+  text-align: center;
+  border-radius: 8px;
+}
+.btn-answer:hover {
+  background: #d6dbf5;
+}
+.check {
+  background: #d6dbf5;
+}
+.line {
+  border: 0.794239px solid #dbdef0;
+  margin-bottom: 10px;
+}
+.correct {
+  background: #94d7a2;
+}
+.wrong {
+  background: rgba(248, 188, 188, 1);
 }
